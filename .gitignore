@@ -11,6 +11,11 @@
 *.cb
 *.cb2
 .*.lb
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.nav
 
 # Mac system files
 .DS_Store
