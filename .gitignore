@@ -12,6 +12,12 @@
 *.cb2
 .*.lb
 
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
 ## Intermediate documents:
 *.dvi
 *.xdv

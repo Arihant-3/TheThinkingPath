@@ -1,0 +1,30 @@
+1. Initial Layout Issues
+When I started, I struggled with structuring tcolorbox environments—especially with placing titles inside vs. outside the box. Indentation, box shapes, and inconsistent alignment made the output look clumsy and unrefined.
+
+2. Displaying Python Code Cleanly
+As I began writing logic-heavy solutions in Python, I needed a way to display them clearly. I figured out how to render code using the listings package inside a shaded box with line numbers. Creating a reusable command for this made my LaTeX more efficient and visually clean.
+
+3. Managing Vertical and Horizontal Spacing
+Rather than relying on \vspace and \hspace, I chose to use their starred versions — \vspace* and \hspace*. Why? Because the starred versions forcefully insert space, even at the top or bottom of a page, where normal \vspace might be ignored. This gave me more reliable control over layout, especially around section breaks or page transitions.
+
+4. Custom Section/Subsection Commands
+I created custom commands for sections and subsections (like \mysection and \mysubsection) that allowed me to stylize headers and simultaneously auto-generate a clean table of contents.
+
+5. Day Separator Design
+I wanted to clearly mark different problem-solving days. I built a custom dotted line separator using TikZ, fine-tuned for symmetry and aesthetic spacing, making transitions between entries visually intuitive.
+
+6. Header/Footer Tweaks
+I learned to customize page headers using the fancyhdr package, eventually excluding them from the first few pages where I had a title and introduction. Managing this conditional layout wasn't straightforward initially.
+
+7. Title Block Design Issues
+One of the hardest parts was making the custom title signature box. I wanted a logo and text side-by-side, vertically aligned. The alignment and spacing between tabularx, minipage, and image height had to be carefully managed.
+
+8. Symbol Confusions and Formatting Errors
+I also faced random errors like:
+
+“Missing $ inserted” due to symbols like ^, #, or \not used improperly.
+
+Overfull boxes from long URLs or misaligned tabular columns.
+
+Confusion with math symbols (not equal, approximate, imply arrows) and how to insert things like the Rupee sign or fading lines.
+

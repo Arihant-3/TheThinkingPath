@@ -1,0 +1,19 @@
+## Rough plan
+
+Formats:
+1. The problem statement
+2. Constraints
+3. My Thought Process
+4. The solution 
+5. Intuition
+
+
+
+day 11: first i thought about sum of n numbers and then divide it by 2 to get new sum each subset have. i have also checked number from 1 to 11 to know about trends and found one- if the sum that can't be divided further can not split into two with equal sum. 
+
+day 12: I thought: Maybe express n like
+n=2x+3y+1 ?
+Which means i trying to model the operations using combinations of divide-by-2 and divide-by-3 moves.
+Maybe at each point we need to think carefully — not only greedy — and sometimes simulate both options.
+
+day 14: i thought of jumping 2 steps first in the multiple of 2- which will have 50 steps. then i will start from 3 and jump 3 consecutively- which will have 33 steps. but in this there is double numbers appearing i.e. 6, so i subtracted it with (50+33) which makes (83-16)=67. then i add the prime numbers to it as it was not in the multiple of 2 or 3- which makes make my answer 90.
